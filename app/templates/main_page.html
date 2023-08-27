@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,800&display=swap" rel="stylesheet">
+<link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+<style>
+  .search {
+   width: 300px; /* Ширина поля с кнопкой */
+   border: 1px solid #000; /* Параметры рамки */
+   min-height: 20px; /* Минимальная высота */
+  }
+  input[type="search"] {
+   border: none; /* Убираем рамку */
+   outline: none; /* Убираем свечение в Chrome и Safari */
+   -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+   width: 274px; /* Ширина поля */
+   vertical-align: middle; /* Выравнивание по середине */
+  }
+  input[type="submit"] {
+   width: 20px; /* Ширина кнопки */
+   height: 20px; /* Высота кнопки */
+   border: none; /* Убираем рамку */
+   background: url(./images/main_page/vk.svg) no-repeat 50% 50%; /* Параметры фона */
+  }
+ </style>
+</head>
+
+<body>
+  <header>
+   <div class="conteiner">
+    <nav>
+      <div class="class_nav">
+        <button class= "nav_menu_buttom" >
+          <img class="nav_menu_basket_img" src="./images/main_page/location.svg" alt ="location">
+        </button>
+        <div class="nav_menu_list">
+          <div class="nav_menu_item">
+            <a class ="nav_menu_links" href = "#">Красноярск</a> 
+          </div>
+          <div class="nav_menu_item">
+            <a class ="nav_menu_links" href = "#">Магазин</a> 
+          </div>
+          <div class="nav_menu_item">
+            <a class ="nav_menu_links" href = "#">Доставка</a> 
+          </div>
+          <button class= "nav_menu_buttom" >
+            <img class="nav_menu_basket_img" src="./images/main_page/watsapp.svg" alt ="Watsapp">
+          </button>
+          <button class= "nav_menu_buttom" >
+            <img class="nav_menu_basket_img" src="./images/main_page/vk.svg" alt ="VK">
+          </button>
+          <button class= "nav_menu_buttom" >
+            <img class="nav_menu_basket_img" src="./images/main_page/telegram.svg" alt ="Telegram">
+          </button>
+          <div class="nav_menu_phone">
+            <a href="#">
+              <img class="phone" src="./images/main_page/phone.svg" alt="telephon ">
+            </a>
+            <p>8-983-362-46-97</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="header_inner">
+        <div class="logo">
+          <a href="#">
+            <img class="logo" src="./images/main_page/logo.svg" alt="logo ">
+          </a>       
+        </div>
+        
+        <div class="catalog">
+          <form>
+          <button><img src="./images/main_page/search_catalog.svg" alt="Поиск в каталоге" 
+            style="vertical-align: middle"> Каталог</button>
+          </form>
+        </div>
+
+        <div class="row_search">
+          <form>
+            <div class="search">
+             <input type="search" name="q">
+             <input type="submit" value="">
+           </div>
+          </form>            
+        </div>
+
+        <div class="icon_input">
+          <button class= "input" >
+            <img class="input_img" src="./images/main_page/input.svg" alt ="input">
+          </button>
+           <h1>Войти</h1>
+        </div>
+        
+        <div class="icon_basket">
+          <button class= "basket" >
+            <img class="basket_img" src="./images/main_page/basket.svg" alt ="basket">
+          </button>
+           <h1>Корзина</h1>
+        </div>
+        
+      </div>
+    </nav>
+
+   </div>
+  </header>    
+</body>
+
+</html>
+
+
