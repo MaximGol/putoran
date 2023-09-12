@@ -6,13 +6,17 @@
 }
 
 html{
-    box-sizing: border-box;
+    box-sizing: border-box; 
     
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    color:black;
-    font-size: size 20px;
-    
-    
+body {
+    background: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+  }
+
+.nav_menu_buttom{
+    background-color:black;
+    color:yellow;
 }
